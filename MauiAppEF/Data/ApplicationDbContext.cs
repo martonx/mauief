@@ -7,7 +7,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<Post> Posts { get; set; }
     public DbSet<Blog> Blogs { get; set; }
 
-    public ApplicationDbContext(string connectionString)
+    public ApplicationDbContext()
     { }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
